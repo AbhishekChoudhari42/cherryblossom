@@ -40,7 +40,7 @@ function drawLine(ctx,x1,y1,x2,y2,depth){
     if(depth < 3){
         ctx.strokeStyle = '#090'
     }else{
-        ctx.strokeStyle = 'rgb(139,126,102,5)'
+        ctx.strokeStyle = 'rgb(149,136,112)'
     }
 
     ctx.lineWidth = depth*1.1
