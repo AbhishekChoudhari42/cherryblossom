@@ -21,16 +21,16 @@ function random(min,max){
 function drawBranch(ctx,x1,y1,angle,depth){
     const BRANCH_LENGTH = Math.random()*depth*9
 
-    drawFlowers(ctx,x1,y1,depth)
-
+    
     if(depth!=0){
         const x2 = x1 + cos(angle)*BRANCH_LENGTH
         const y2 = y1 + sin(angle)*BRANCH_LENGTH
-
+        
         drawLine(ctx,x1,y1,x2,y2,depth)
         drawBranch(ctx,x2,y2,angle + random(15,25),depth-1)
         drawBranch(ctx,x2,y2,angle - random(15,25),depth-1)
     }
+    drawFlowers(ctx,x1,y1,depth)
 }
 
 function drawLine(ctx,x1,y1,x2,y2,depth){
