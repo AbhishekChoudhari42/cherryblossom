@@ -1,5 +1,5 @@
 export function drawTree(ctx,width,height){
-    drawBranch(ctx,width/2,height - 50,-90,12)
+    drawBranch(ctx,width/2,height - 50,-90,13)
 } 
 
 function deg_to_rad(angle){
