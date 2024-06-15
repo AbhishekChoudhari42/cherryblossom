@@ -1,5 +1,7 @@
 export function drawTree(ctx,width,height){
     drawBranch(ctx,width/2,height - 50,-90,13)
+    drawBranch(ctx,width/2 + 200,height - 50,-90,13)
+    drawBranch(ctx,width/2 - 200,height - 50,-90,13)
 } 
 
 function deg_to_rad(angle){
@@ -57,7 +59,7 @@ function drawFlowers(ctx,x1,y1,depth){
 
     if(depth == 0){
         ctx.beginPath()
-        ctx.fillStyle = r < 0.25 ? "f3ff" : r < 0.8 ? "#d0da" : "#e0ea";
+        ctx.fillStyle = r < 0.25 ? "f4ff" : r < 0.8 ? "#e8ef" : "#d0da";
         ctx.arc(x1,y1,r*5 + 1,0,2*Math.PI)
         ctx.fill()
         ctx.closePath()
